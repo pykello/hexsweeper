@@ -1,5 +1,5 @@
 NAME = hexsweeper
-OBJS = hexsweeper.o hexbutton.o
+OBJS = hexsweeper.o hexbutton.o hexgrid.o
 
 CFLAGS = `pkg-config --cflags gtk+-3.0`
 LDFLAGS = `pkg-config --libs gtk+-3.0`

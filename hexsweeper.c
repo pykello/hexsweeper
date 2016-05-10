@@ -1,6 +1,7 @@
 #include <gtk/gtk.h>
 
 #include "hexbutton.h"
+#include "hexgrid.h"
 
 static void
 print_hello (GtkWidget *widget,
@@ -15,17 +16,18 @@ activate (GtkApplication *app,
 {
   GtkWidget *window;
   GtkWidget *button;
-  GtkWidget *button_box; 
+  GtkWidget *hexgrid; 
 
   window = gtk_application_window_new (app);
   gtk_window_set_title (GTK_WINDOW (window), "Window");
   gtk_window_set_default_size (GTK_WINDOW (window), 200, 200);
 
-  button_box = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
-  gtk_container_add (GTK_CONTAINER (window), button_box);
+  hexgrid = gtk_hexgrid_new (4, 50);
+  gtk_container_add (GTK_CONTAINER (window), hexgrid);
 
   button = gtk_hexbutton_new ();
-  gtk_container_add (GTK_CONTAINER (button_box), button);
+  gtk_container_add (GTK_CONTAINER (hexgrid), button);
+  // gtk_layout_put(GTK_LAYOUT(hexgrid), button, 10, 10);
   gtk_widget_set_size_request (button, 50, 50);
   g_signal_connect (button, "clicked", G_CALLBACK (print_hello), NULL);
 
