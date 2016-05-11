@@ -8,4 +8,4 @@ all: $(OBJS)
 	gcc $(LDFLAGS) -o $(NAME) $(OBJS) 
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(NAME)

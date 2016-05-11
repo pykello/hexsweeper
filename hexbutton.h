@@ -8,8 +8,8 @@ G_BEGIN_DECLS
 #define GTK_TYPE_HEXBUTTON (gtk_hexbutton_get_type ())
 #define GTK_HEXBUTTON(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_HEXBUTTON, GtkHexButton))
 
-typedef struct _GtkHexButton             GtkHexButton;
-typedef struct _GtkHexButtonClass        GtkHexButtonClass;
+typedef struct _GtkHexButton	     GtkHexButton;
+typedef struct _GtkHexButtonClass	GtkHexButtonClass;
 
 struct _GtkHexButton {
   GtkButton parent_instance;

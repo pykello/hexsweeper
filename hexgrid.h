@@ -8,8 +8,8 @@ G_BEGIN_DECLS
 #define GTK_TYPE_HEXGRID (gtk_hexgrid_get_type ())
 #define GTK_HEXGRID(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_HEXGRID, GtkHexGrid))
 
-typedef struct _GtkHexGrid             GtkHexGrid;
-typedef struct _GtkHexGridClass        GtkHexGridClass;
+typedef struct _GtkHexGrid	     GtkHexGrid;
+typedef struct _GtkHexGridClass	GtkHexGridClass;
 
 struct _GtkHexGrid {
   GtkLayout parent_instance;

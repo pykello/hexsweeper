@@ -10,12 +10,12 @@ G_DEFINE_TYPE_WITH_PRIVATE (GtkHexButton, gtk_hexbutton, GTK_TYPE_BUTTON)
 
 static void
 draw_outline (cairo_t *cr,
-              GdkRGBA* top_color,
-              GdkRGBA* bottom_color,
-              int      x,
-              int      y,
-              int      width,
-              int      height)
+	      GdkRGBA* top_color,
+	      GdkRGBA* bottom_color,
+	      int      x,
+	      int      y,
+	      int      width,
+	      int      height)
 {
   GdkRGBA rgba;
   gdk_cairo_set_source_rgba (cr, top_color);
