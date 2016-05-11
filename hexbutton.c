@@ -26,7 +26,7 @@ draw_outline (cairo_t *cr,
   cairo_stroke(cr);
 
   gdk_cairo_set_source_rgba (cr, bottom_color);
-  cairo_move_to(cr, (3 * width) / 4, 0);
+  cairo_move_to(cr, (3 * width) / 4 - 2, 0);
   cairo_rel_line_to(cr, width / 4, height / 2);
   cairo_rel_line_to(cr, -width / 4, height / 2);
   cairo_rel_line_to(cr, -width / 2, 0);

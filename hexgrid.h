@@ -21,6 +21,7 @@ struct _GtkHexGridClass {
 
 GtkWidget * gtk_hexgrid_new (gint size, gint button_size);
 GType gtk_hexgrid_get_type (void) G_GNUC_CONST;
+void gtk_hexgrid_put(GtkHexGrid* grid, GtkWidget* child, int x, int y);
 
 G_END_DECLS
 
